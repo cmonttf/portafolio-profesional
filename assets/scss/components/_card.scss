@@ -1,0 +1,59 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.card {
+  @include superficie;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @include transicion(transform);
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &__imagen {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  &__contenido {
+    padding: $espaciado-md;
+    display: flex;
+    flex-direction: column;
+    gap: $espaciado-xs;
+    flex: 1;
+  }
+
+  &__titulo {
+    font-size: 1.2rem;
+  }
+
+  &__descripcion {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+    flex: 1;
+  }
+
+  &__tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaciado-xs;
+    margin: $espaciado-xs 0;
+  }
+
+  &__acciones {
+    display: flex;
+    gap: $espaciado-xs;
+    margin-top: $espaciado-xs;
+  }
+}
+
+.badge {
+  @include superficie;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  color: $color-acento;
+}

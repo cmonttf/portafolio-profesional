@@ -1,0 +1,46 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+  min-height: 70vh;
+  @include flex-centrado(column);
+  text-align: center;
+
+  &__avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $color-primario;
+    margin-bottom: $espaciado-md;
+  }
+
+  &__saludo {
+    color: $color-primario;
+    font-weight: 600;
+  }
+
+  &__nombre {
+    font-size: 2.5rem;
+    margin: $espaciado-xs 0;
+  }
+
+  &__titulo {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 400;
+  }
+
+  &__bio {
+    max-width: 550px;
+    margin: $espaciado-md auto;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__acciones {
+    display: flex;
+    gap: $espaciado-sm;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

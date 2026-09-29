@@ -1,0 +1,11 @@
+@use "../variables" as *;
+
+.experience {
+  &__filtros {
+    display: flex;
+    gap: $espaciado-xs;
+    justify-content: center;
+    margin-bottom: $espaciado-lg;
+    flex-wrap: wrap;
+  }
+}

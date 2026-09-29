@@ -1,0 +1,14 @@
+{
+  "name": "portafolio-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Portafolio personal de proyectos frontend, construido con Vue 3 (CDN, arquitectura MVVM) y Sass.",
+  "scripts": {
+    "sass:build": "sass assets/scss/main.scss assets/css/main.css --no-source-map",
+    "sass:watch": "sass assets/scss/main.scss assets/css/main.css --watch --no-source-map",
+    "start": "npx --yes serve -l 5500 ."
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}

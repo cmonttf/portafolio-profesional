@@ -1,0 +1,62 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.navbar {
+  @include flex-centrado;
+  justify-content: space-between;
+  padding: $espaciado-sm $espaciado-md;
+  background-color: $color-fondo-superficie;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &__marca {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: $color-texto;
+    font-size: 1.05rem;
+  }
+
+  &__toggle {
+    display: block;
+    color: $color-texto;
+    font-size: 1.5rem;
+
+    @include respond-to($punto-tablet) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $color-fondo-superficie;
+    flex-direction: column;
+    display: none;
+    padding: $espaciado-sm;
+
+    &--abierto {
+      display: flex;
+    }
+
+    a {
+      padding: $espaciado-sm;
+      @include transicion(color);
+
+      &:hover {
+        color: $color-primario;
+      }
+    }
+
+    @include respond-to($punto-tablet) {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      gap: $espaciado-md;
+      background: none;
+      padding: 0;
+    }
+  }
+}

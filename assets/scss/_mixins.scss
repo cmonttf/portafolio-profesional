@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+@mixin respond-to($punto) {
+  @media (min-width: $punto) {
+    @content;
+  }
+}
+
+@mixin flex-centrado($direccion: row) {
+  display: flex;
+  flex-direction: $direccion;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin superficie {
+  background-color: $color-fondo-superficie;
+  border: 1px solid $color-borde;
+  border-radius: $radio-borde;
+}
+
+@mixin transicion($propiedad: all, $duracion: 0.2s) {
+  transition: $propiedad $duracion ease;
+}

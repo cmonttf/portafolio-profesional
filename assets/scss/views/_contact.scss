@@ -1,0 +1,25 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.contact {
+  text-align: center;
+
+  &__enlaces {
+    display: flex;
+    justify-content: center;
+    gap: $espaciado-md;
+    flex-wrap: wrap;
+
+    a {
+      @include superficie;
+      @include flex-centrado;
+      gap: $espaciado-xs;
+      padding: $espaciado-sm $espaciado-md;
+      @include transicion(background-color);
+
+      &:hover {
+        background-color: $color-primario;
+      }
+    }
+  }
+}

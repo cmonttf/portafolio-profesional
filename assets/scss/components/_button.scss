@@ -1,0 +1,25 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: $radio-borde;
+  font-weight: 600;
+  @include transicion(transform);
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &--primario {
+    background-color: $color-primario;
+    color: $color-texto;
+  }
+
+  &--secundario {
+    background-color: transparent;
+    border: 1px solid $color-primario;
+    color: $color-primario;
+  }
+}
