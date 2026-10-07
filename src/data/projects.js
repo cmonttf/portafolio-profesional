@@ -22,13 +22,13 @@ export const projects = [
     demoUrl: "",
   }),
   createProject({
-    id: "bitacora",
-    nombre: "Bitácora",
+    id: "dashboard",
+    nombre: "Dashboard de Gestión",
     descripcion:
-      "Aplicación Laravel para gestionar notas personales bajo un modelo SaaS por suscripción: planes con límite mensual, perfiles y permisos administrativos, y panel de Superadmin con estadísticas e ingresos. Arquitectura en capas (Controller → Service → Interface → DAO) con DTOs, sin depender de Eloquent para la lógica de negocio.",
-    imagen: "",
-    tecnologias: ["Laravel", "PHP", "MySQL", "Bootstrap"],
-    repoUrl: "https://github.com/cmonttf/bitacora",
+      "Panel de administración para gestionar pedidos, clientes y productos: indicadores clave, gráficos de ingresos y estados, CRUD completo con tablas filtrables y modales, tema claro/oscuro y respaldo de datos en JSON. Funciona sin backend, persistiendo todo en LocalStorage, con componentes Vue 3 cargados dinámicamente (vue3-sfc-loader) bajo el patrón MVVM.",
+    imagen: "assets/img/proyectos/dashboard.png",
+    tecnologias: ["Vue", "Bootstrap", "Chart.js", "Sass"],
+    repoUrl: "https://github.com/cmonttf/dashboard",
     demoUrl: "",
   }),
   createProject({
