@@ -9,7 +9,7 @@ export const projects = [
     imagen: "assets/img/proyectos/smartbudget.png",
     tecnologias: ["HTML", "Sass", "Bootstrap", "JavaScript"],
     repoUrl: "https://github.com/cmonttf/smartbudget",
-    demoUrl: "",
+    demoUrl: "https://cmonttf.github.io/smartbudget/",
   }),
   createProject({
     id: "taskflow",
@@ -19,7 +19,7 @@ export const projects = [
     imagen: "assets/img/proyectos/taskflow.png",
     tecnologias: ["JavaScript", "HTML", "CSS"],
     repoUrl: "https://github.com/cmonttf/taskflow",
-    demoUrl: "",
+    demoUrl: "https://cmonttf.github.io/taskflow/",
   }),
   createProject({
     id: "dashboard",
@@ -29,7 +29,7 @@ export const projects = [
     imagen: "assets/img/proyectos/dashboard.png",
     tecnologias: ["Vue", "Bootstrap", "Chart.js", "Sass"],
     repoUrl: "https://github.com/cmonttf/dashboard",
-    demoUrl: "",
+    demoUrl: "https://cmonttf.github.io/dashboard/",
   }),
   createProject({
     id: "booklist-spa",
@@ -39,6 +39,6 @@ export const projects = [
     imagen: "assets/img/proyectos/booklist-spa.png",
     tecnologias: ["Vue", "Vue Router", "Vuex", "Webpack"],
     repoUrl: "https://github.com/cmonttf/booklist-spa",
-    demoUrl: "",
+    demoUrl: "https://cmonttf.github.io/booklist-spa/",
   }),
 ];
