@@ -305,9 +305,12 @@ section {
 
 .about__bio {
   max-width: 700px;
-  margin: 0 auto 2.5rem;
-  text-align: center;
+  margin: 0 auto 1rem;
+  text-align: left;
   color: rgba(255, 255, 255, 0.8);
+}
+.about__bio:last-of-type {
+  margin-bottom: 2.5rem;
 }
 .about__habilidades {
   margin-bottom: 1.5rem;
