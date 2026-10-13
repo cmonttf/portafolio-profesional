@@ -31,14 +31,4 @@ export const projects = [
     repoUrl: "https://github.com/cmonttf/dashboard",
     demoUrl: "https://cmonttf.github.io/dashboard/",
   }),
-  createProject({
-    id: "booklist-spa",
-    nombre: "BookList SPA",
-    descripcion:
-      "SPA en Vue.js para gestionar el catálogo de libros de una editorial: alta de libros con formularios reactivos, filtros por autor/categoría, detalle individual por ruta dinámica y un dashboard de indicadores en tiempo real. Desarrollada siguiendo el patrón MVVM con Vue Router y Vuex.",
-    imagen: "assets/img/proyectos/booklist-spa.png",
-    tecnologias: ["Vue", "Vue Router", "Vuex", "Webpack"],
-    repoUrl: "https://github.com/cmonttf/booklist-spa",
-    demoUrl: "https://cmonttf.github.io/booklist-spa/",
-  }),
 ];
