@@ -50,7 +50,6 @@ Portafolio/
 | [SmartBudget](https://github.com/cmonttf/smartbudget) | Plataforma de finanzas personales: dashboard, movimientos, presupuestos y reportes. | HTML, Sass, Bootstrap, JavaScript |
 | [TaskFlow](https://github.com/cmonttf/taskflow) | Gestor de tareas con persistencia en LocalStorage y sincronización con una API externa. | JavaScript, HTML, CSS |
 | [Dashboard de Gestión](https://github.com/cmonttf/dashboard) | Panel de administración de pedidos, clientes y productos con gráficos, CRUD y persistencia en LocalStorage. | Vue, Bootstrap, Chart.js, Sass |
-| [BookList SPA](https://github.com/cmonttf/booklist-spa) | SPA en Vue para gestionar un catálogo de libros, bajo patrón MVVM. | Vue, Vue Router, Vuex, Webpack |
 
 ## Cómo ejecutarlo localmente
 
