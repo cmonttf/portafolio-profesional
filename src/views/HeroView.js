@@ -12,7 +12,7 @@ export default {
         <p class="hero__saludo">Hola, soy</p>
         <h1 class="hero__nombre">{{ profile.nombre }}</h1>
         <h2 class="hero__titulo">{{ profile.titulo }}</h2>
-        <p class="hero__bio">{{ profile.bio }}</p>
+        <p class="hero__bio">{{ profile.bioCorta }}</p>
         <div class="hero__acciones">
           <a href="#proyectos" class="boton boton--primario">Ver proyectos</a>
           <a href="#contacto" class="boton boton--secundario">Contáctame</a>
